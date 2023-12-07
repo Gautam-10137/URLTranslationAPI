@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 from deep_translator import GoogleTranslator
 import os
-
+from werkzeug.utils import url_quote
 app = Flask(__name__)
 
 def extract_content(url):
